@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-float triplo(float n) {
-    return 3 * n;
+float triplo(float valor) {
+    return 3 * valor;
 }
 
 int main() {
-    float valor;
-    printf("Informe um valor decimal: ");
-    scanf("%f", &valor);
+    float numero;
+    printf("Informe um número: ");
+    scanf("%f", &numero);
 
-    printf("O triplo de %.2f é %.2f\n", valor, triplo(valor));
+    printf("O triplo de %.2f é %.2f\n", numero, triplo(numero));
     return 0;
 }
