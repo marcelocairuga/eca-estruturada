@@ -7,11 +7,13 @@ int comparar(int a, int b) {
 }
 
 int main() {
-    int x, y;
-    printf("Digite dois valores inteiros: ");
-    scanf("%d %d", &x, &y);
+    float valor1, valor2;
+    printf("Digite o primeiro valor: ");
+    scanf("%f", &valor1);    
+    printf("Digite o segundo valor: ");
+    scanf("%f", &valor2);
 
-    int resultado = comparar(x, y);
+    int resultado = comparar(valor1, valor2);
 
     if (resultado == 0)
         printf("Os valores são iguais.\n");
@@ -19,6 +21,6 @@ int main() {
         printf("O primeiro valor é menor que o segundo.\n");
     else
         printf("O primeiro valor é maior que o segundo.\n");
-
+    
     return 0;
 }
