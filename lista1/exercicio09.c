@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-float converter(float temp, char tipo) {
-    if (tipo == 'c' || tipo == 'C')
-        return (temp - 32) * 5 / 9;   // F → C
-    else if (tipo == 'f' || tipo == 'F')
-        return (temp * 9 / 5) + 32;   // C → F
+float converter(float temperatura, char unidade) {
+    if (unidade == 'c' || unidade == 'C')
+        return (temperatura - 32) * 5 / 9;   // F → C
+    else if (unidade == 'f' || unidade == 'F')
+        return (temperatura * 9 / 5) + 32;   // C → F
     else {
-        printf("Tipo de conversão inválido!\n");
+        printf("Unidade de conversão inválida!\n");
         return 0;
     }
 }
