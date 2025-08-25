@@ -5,14 +5,18 @@ float mediaPonderada(float v1, float v2, int p1, int p2) {
 }
 
 int main() {
-    float v1, v2;
-    int p1, p2;
+    float valor1, valor2;
+    int peso1, peso2;
+    printf("Digite o primeiro valor: ");
+    scanf("%f", &valor1);    
+    printf("Digite o segundo valor: ");
+    scanf("%f", &valor2);
+    
+    printf("Digite o primeiro peso: ");
+    scanf("%d", &peso1);    
+    printf("Digite o segundo peso: ");
+    scanf("%d", &peso2);
 
-    printf("Digite dois valores: ");
-    scanf("%f %f", &v1, &v2);
-    printf("Digite os respectivos pesos: ");
-    scanf("%d %d", &p1, &p2);
-
-    printf("A média ponderada é %.2f\n", mediaPonderada(v1, v2, p1, p2));
+    printf("A média ponderada é %.2f\n", mediaPonderada(valor1, valor2, peso1, peso2));
     return 0;
 }
