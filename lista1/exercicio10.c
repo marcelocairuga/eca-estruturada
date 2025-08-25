@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 void lerNumero() {
-    int n;
+    int numero;
     printf("Informe um número inteiro: ");
-    scanf("%d", &n);
-    printf("Você informou o número %d.\n", n);
+    scanf("%d", &numero);
+    printf("Você informou o número %d.\n", numero);
 }
 
 int main() {
-    int qtd;
+    int quantidade;
     printf("Quantos números deseja informar? ");
-    scanf("%d", &qtd);
+    scanf("%d", &quantidade);
 
-    for (int i = 0; i < qtd; i++) {
+    for (int i = 0; i < quantidade; i++) {
         lerNumero();
     }
     return 0;
