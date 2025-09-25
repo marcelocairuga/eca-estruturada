@@ -8,7 +8,7 @@ void imprimir(float vetor[], int n) {
 }
 
 int main() {
-    float numeros[] = {1.5, 2.3, 4.7, 6.0, 9.8};
+    float numeros[5] = {1.5, 2.3, 4.7, 6.0, 9.8};
     imprimir(numeros, 5);
     return 0;
 }
